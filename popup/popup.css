@@ -133,6 +133,16 @@ h1 {
   vertical-align: middle;
 }
 
+.reason-link {
+  color: #74b9ff;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.reason-link:hover {
+  color: #a29bfe;
+}
+
 #summary {
   display: flex;
   justify-content: center;

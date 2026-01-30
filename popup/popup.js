@@ -54,7 +54,7 @@ scanBtn.addEventListener('click', () => {
           <div class="ext-detail">${ext.enabled ? 'Enabled' : 'Disabled'} &middot; ${escapeHtml(ext.installType)}</div>
           <div class="ext-risk risk-${riskClass}">
             ${riskIcon}
-            ${reasons.map(r => escapeHtml(r)).join('<br>')}
+            ${reasons.map(r => linkifyReason(r)).join('<br>')}
           </div>
         </div>
       `;
@@ -72,4 +72,15 @@ function escapeHtml(str) {
   const div = document.createElement('div');
   div.textContent = str || '';
   return div.innerHTML;
+}
+
+function linkifyReason(str) {
+  const urlPattern = /(https?:\/\/[^\s]+)/g;
+  const parts = str.split(urlPattern);
+  return parts.map(part => {
+    if (/^https?:\/\//.test(part)) {
+      return `<a class="reason-link" href="${escapeHtml(part)}" target="_blank" rel="noopener noreferrer">${escapeHtml(part)}</a>`;
+    }
+    return escapeHtml(part);
+  }).join('');
 }

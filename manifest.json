@@ -9,6 +9,9 @@
     "alarms",
     "notifications"
   ],
+  "host_permissions": [
+    "https://clients2.google.com/*"
+  ],
   "background": {
     "service_worker": "background/background.js"
   },

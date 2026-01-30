@@ -25,27 +25,32 @@ scanBtn.addEventListener('click', () => {
       return;
     }
 
-    let safe = 0, warn = 0, danger = 0;
+    let safe = 0, warn = 0, danger = 0, blocklisted = 0;
 
     for (const ext of exts) {
       const { level, reasons } = ext.analysis;
       if (level === 'safe') safe++;
       else if (level === 'warn') warn++;
+      else if (level === 'blocklist') { blocklisted++; danger++; }
       else danger++;
 
       const iconUrl = ext.icons && ext.icons.length > 0
         ? ext.icons[ext.icons.length - 1].url
         : '';
 
+      const riskClass = level === 'blocklist' ? 'blocklist' : level;
+      const riskIcon = level === 'safe' ? '&#10003;' : level === 'warn' ? '&#9888;' : '&#10007;';
+      const blocklistBadge = level === 'blocklist' ? '<span class="badge-blocklist">BLOCKLISTED</span> ' : '';
+
       const item = document.createElement('div');
       item.className = 'ext-item';
       item.innerHTML = `
         ${iconUrl ? `<img class="ext-icon" src="${iconUrl}" alt="">` : '<div class="ext-icon"></div>'}
         <div class="ext-info">
-          <div class="ext-name">${escapeHtml(ext.name)} <span style="color:#666;font-weight:400">v${escapeHtml(ext.version)}</span></div>
+          <div class="ext-name">${blocklistBadge}${escapeHtml(ext.name)} <span style="color:#666;font-weight:400">v${escapeHtml(ext.version)}</span></div>
           <div class="ext-detail">${ext.enabled ? 'Enabled' : 'Disabled'} &middot; ${escapeHtml(ext.installType)}</div>
-          <div class="ext-risk risk-${level}">
-            ${level === 'safe' ? '&#10003;' : level === 'warn' ? '&#9888;' : '&#10007;'}
+          <div class="ext-risk risk-${riskClass}">
+            ${riskIcon}
             ${reasons.map(r => escapeHtml(r)).join('<br>')}
           </div>
         </div>

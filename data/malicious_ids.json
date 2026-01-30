@@ -1,0 +1,32 @@
+[
+    {
+        "id": "efaidnbmnnnibpcajpcglclefindmkaj",
+        "name": "PDF Viewer (fake)",
+        "reason": "Data exfiltration via injected scripts"
+    },
+    {
+        "id": "lmjegmlicamnimmfhcmpkclmigmmgoaf",
+        "name": "The Great Suspender (compromised)",
+        "reason": "Sold to malicious actor; injected tracking/malware code"
+    },
+    {
+        "id": "pkdcjgilnfnahbainmgagbhkfgejocpp",
+        "name": "AddScript",
+        "reason": "Runs obfuscated scripts to harvest data and inject ads"
+    },
+    {
+        "id": "jbalmgejgeiphmcoppidaahekoiahfeo",
+        "name": "FB Stealer",
+        "reason": "Steals Facebook session cookies"
+    },
+    {
+        "id": "fcdjojgnbmnnhilacdapoiljhpmjdbnj",
+        "name": "WebSearch (fake)",
+        "reason": "Browser hijacker redirecting search queries"
+    },
+    {
+        "id": "oaikpkmjciadfpddlpjjdapglcihgdle",
+        "name": "CursedChrome",
+        "reason": "Turns browser into HTTP proxy for attackers"
+    }
+]

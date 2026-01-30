@@ -107,6 +107,19 @@ h1 {
 .risk-safe { color: #00d4aa; }
 .risk-warn { color: #ffc107; }
 .risk-danger { color: #ff4757; }
+.risk-blocklist { color: #ff4757; font-weight: 600; }
+
+.badge-blocklist {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: #ff4757;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
 
 #summary {
   display: flex;

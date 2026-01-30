@@ -27,11 +27,50 @@ const SUSPICIOUS_HOST_PATTERNS = [
   'https://*/*',
 ];
 
+// TODO: Replace with your actual GitHub Pages URL after enabling Pages on the repo.
+// Format: https://<username>.github.io/<repo>/malicious_ids.json
+const REMOTE_BLOCKLIST_URL = '';
+
+/**
+ * Load the malicious extension ID blocklist.
+ * Tries the remote GitHub Pages URL first for the latest data,
+ * then falls back to the locally bundled copy.
+ */
+async function loadBlocklist() {
+  if (REMOTE_BLOCKLIST_URL) {
+    try {
+      const resp = await fetch(REMOTE_BLOCKLIST_URL, { cache: 'no-cache' });
+      if (resp.ok) {
+        return await resp.json();
+      }
+    } catch (e) {
+      console.warn('GuardExt: remote blocklist fetch failed, using local copy', e);
+    }
+  }
+  try {
+    const url = chrome.runtime.getURL('data/malicious_ids.json');
+    const resp = await fetch(url);
+    return await resp.json();
+  } catch (e) {
+    console.warn('GuardExt: failed to load blocklist', e);
+    return [];
+  }
+}
+
 /**
  * Analyze an extension's risk level based on its permissions and metadata.
- * Returns { level: 'safe'|'warn'|'danger', reasons: string[] }
+ * Returns { level: 'safe'|'warn'|'danger'|'blocklist', reasons: string[], score: number }
  */
-function analyzeExtension(ext) {
+function analyzeExtension(ext, blocklist) {
+  // Check blocklist first
+  const blockEntry = blocklist.find((entry) => entry.id === ext.id);
+  if (blockEntry) {
+    return {
+      level: 'blocklist',
+      reasons: [`Known malicious: ${blockEntry.reason}`],
+      score: 100,
+    };
+  }
   const reasons = [];
   let score = 0;
 
@@ -81,25 +120,27 @@ function analyzeExtension(ext) {
 // Listen for messages from popup
 chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
   if (msg.action === 'scanExtensions') {
-    chrome.management.getAll((extensions) => {
-      // Filter out self and themes
-      const results = extensions
-        .filter((ext) => ext.type === 'extension' && ext.id !== chrome.runtime.id)
-        .map((ext) => ({
-          id: ext.id,
-          name: ext.name,
-          version: ext.version,
-          enabled: ext.enabled,
-          installType: ext.installType,
-          description: ext.description,
-          icons: ext.icons,
-          permissions: ext.permissions,
-          hostPermissions: ext.hostPermissions,
-          analysis: analyzeExtension(ext),
-        }))
-        .sort((a, b) => b.analysis.score - a.analysis.score);
+    loadBlocklist().then((blocklist) => {
+      chrome.management.getAll((extensions) => {
+        // Filter out self and themes
+        const results = extensions
+          .filter((ext) => ext.type === 'extension' && ext.id !== chrome.runtime.id)
+          .map((ext) => ({
+            id: ext.id,
+            name: ext.name,
+            version: ext.version,
+            enabled: ext.enabled,
+            installType: ext.installType,
+            description: ext.description,
+            icons: ext.icons,
+            permissions: ext.permissions,
+            hostPermissions: ext.hostPermissions,
+            analysis: analyzeExtension(ext, blocklist),
+          }))
+          .sort((a, b) => b.analysis.score - a.analysis.score);
 
-      sendResponse({ extensions: results });
+        sendResponse({ extensions: results });
+      });
     });
     return true; // async response
   }

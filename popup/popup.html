@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GuardExt</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>GuardExt</h1>
+    <p class="subtitle">Extension Security Scanner</p>
+    <button id="scan-btn">Scan Extensions</button>
+    <div id="results">
+      <p class="placeholder">Click "Scan Extensions" to check your installed extensions.</p>
+    </div>
+    <div id="summary" class="hidden">
+      <span id="safe-count" class="badge safe">0 Safe</span>
+      <span id="warn-count" class="badge warn">0 Warnings</span>
+      <span id="danger-count" class="badge danger">0 Dangerous</span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

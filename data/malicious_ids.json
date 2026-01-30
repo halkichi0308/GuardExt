@@ -98,5 +98,25 @@
         "id": "hpcejjllhbalkcmdikecfngkepppoknd",
         "name": "Search with ChatGPT",
         "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "fbfldogmkadejddihifklefknmikncaj",
+        "name": "Phantom Shuttle",
+        "reason": "https://thehackernews.com/2025/12/two-chrome-extensions-caught-secretly.html"
+    },
+    {
+        "id": "ocpcmfmiidofonkbodpdhgddhlcmcofd",
+        "name": "Phantom Shuttle",
+        "reason": "https://thehackernews.com/2025/12/two-chrome-extensions-caught-secretly.html"
+    },
+    {
+        "id": "jcbiifklmgnkppebelchllpdbnibihel",
+        "name": "Chrome 用の無料 VPN - Free VPN",
+        "reason": "https://dex.koi.security/reports/chrome/jcbiifklmgnkppebelchllpdbnibihel/3.1.5"
+    },
+    {
+        "id": "eppiocemhmnlbhjplcgkofciiegomcon",
+        "name": "Urban VPN Proxy",
+        "reason": "https://dex.koi.security/reports/chrome/eppiocemhmnlbhjplcgkofciiegomcon/5.11.6"
     }
 ]

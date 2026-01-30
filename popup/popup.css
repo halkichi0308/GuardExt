@@ -121,6 +121,28 @@ h1 {
   vertical-align: middle;
 }
 
+.badge-unlisted {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: #ffa502;
+  color: #1a1a2e;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
+.reason-link {
+  color: #74b9ff;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.reason-link:hover {
+  color: #a29bfe;
+}
+
 #summary {
   display: flex;
   justify-content: center;

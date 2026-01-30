@@ -1,32 +1,122 @@
 [
     {
-        "id": "efaidnbmnnnibpcajpcglclefindmkaj",
-        "name": "PDF Viewer (fake)",
-        "reason": "Data exfiltration via injected scripts"
+        "id": "pmilcmjbofinpnbnpanpdadijibcgifc",
+        "name": "Sound Booster",
+        "reason": "https://layerxsecurity.com/blog/sleeper-sound-layerx-uncovers-malicious-sleeper-sound-management-extensions-with-nearly-1-5-million-users-worldwide/"
     },
     {
-        "id": "lmjegmlicamnimmfhcmpkclmigmmgoaf",
-        "name": "The Great Suspender (compromised)",
-        "reason": "Sold to malicious actor; injected tracking/malware code"
+        "id": "mgbhdehiapbjamfgekfpebmhmnmcmemg",
+        "name": "Examine source code of Volume Max – Ultimate Sound Booster",
+        "reason": "https://layerxsecurity.com/blog/sleeper-sound-layerx-uncovers-malicious-sleeper-sound-management-extensions-with-nearly-1-5-million-users-worldwide/"
     },
     {
-        "id": "pkdcjgilnfnahbainmgagbhkfgejocpp",
-        "name": "AddScript",
-        "reason": "Runs obfuscated scripts to harvest data and inject ads"
+        "id": "eoejmjkddfbhhnbmklhccnppogeaeeah",
+        "name": "Volume Master: Master Your Sound",
+        "reason": "https://layerxsecurity.com/blog/sleeper-sound-layerx-uncovers-malicious-sleeper-sound-management-extensions-with-nearly-1-5-million-users-worldwide/"
     },
     {
-        "id": "jbalmgejgeiphmcoppidaahekoiahfeo",
-        "name": "FB Stealer",
-        "reason": "Steals Facebook session cookies"
+        "id": "dlcgileladmbfijjmnleehhoebpggpjl",
+        "name": "Volume Booster: Ultimate Sound Enhancer",
+        "reason": "https://layerxsecurity.com/blog/sleeper-sound-layerx-uncovers-malicious-sleeper-sound-management-extensions-with-nearly-1-5-million-users-worldwide/"
     },
     {
-        "id": "fcdjojgnbmnnhilacdapoiljhpmjdbnj",
-        "name": "WebSearch (fake)",
-        "reason": "Browser hijacker redirecting search queries"
+        "id": "gbcgjnbccjojicobfimcnfjddhpphaod",
+        "name": "ChatGPT bulk delete, Chat manager",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
     },
     {
-        "id": "oaikpkmjciadfpddlpjjdapglcihgdle",
-        "name": "CursedChrome",
-        "reason": "Turns browser into HTTP proxy for attackers"
+        "id": "hljdedgemmmkdalbnmnpoimdedckdkhm",
+        "name": "ChatGPT export, Markdown, JSON, images",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "lmiigijnefpkjcenfbinhdpafehaddag",
+        "name": "ChatGPT folder, voice download, prompt manager, free tools",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "ifjimhnbnbniiiaihphlclkpfikcdkab",
+        "name": "ChatGPT message navigator, history scroller",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "jhohjhmbiakpgedidneeloaoloadlbdj",
+        "name": "ChatGPT Mods",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "kefnabicobeigajdngijnnjmljehknjl",
+        "name": "ChatGPT pin chat, bookmark",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "ioaeacncbhpmlkediaagefiegegknglc",
+        "name": "ChatGPT Prompt Manager, Folder, Library, Auto Send",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "mmjmcfaejolfbenlplfoihnobnggljij",
+        "name": "ChatGPT prompt optimization",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "ipjgfhcjeckaibnohigmbcaonfcjepmb",
+        "name": "ChatGPT search history, locate specific messages",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "afjenpabhpfodjpncbiiahbknnghabdc",
+        "name": "ChatGPT Timestamp Display",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "hfdpdgblphooommgcjdnnmhpglleaafj",
+        "name": "ChatGPT Token counter",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "pfgbcfaiglkcoclichlojeaklcfboieh",
+        "name": "ChatGPT model switch, save advanced model uses",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "območbankihdfckkbfnoglefmdgmblcld",
+        "name": "ChatGPT voice download, TTS download",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "lechagcebaneoafonkbfkljmbmaaoaec",
+        "name": "Collapsed message",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "nhnfaiiobkpbenbbiblmgncgokeknnno",
+        "name": "Multi-Profile Management & Switching",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "hpcejjllhbalkcmdikecfngkepppoknd",
+        "name": "Search with ChatGPT",
+        "reason": "https://www.malwarebytes.com/blog/news/2026/01/malicious-chrome-extensions-can-spy-on-your-chatgpt-chats"
+    },
+    {
+        "id": "fbfldogmkadejddihifklefknmikncaj",
+        "name": "Phantom Shuttle",
+        "reason": "https://thehackernews.com/2025/12/two-chrome-extensions-caught-secretly.html"
+    },
+    {
+        "id": "ocpcmfmiidofonkbodpdhgddhlcmcofd",
+        "name": "Phantom Shuttle",
+        "reason": "https://thehackernews.com/2025/12/two-chrome-extensions-caught-secretly.html"
+    },
+    {
+        "id": "jcbiifklmgnkppebelchllpdbnibihel",
+        "name": "Chrome 用の無料 VPN - Free VPN",
+        "reason": "https://dex.koi.security/reports/chrome/jcbiifklmgnkppebelchllpdbnibihel/3.1.5"
+    },
+    {
+        "id": "eppiocemhmnlbhjplcgkofciiegomcon",
+        "name": "Urban VPN Proxy",
+        "reason": "https://dex.koi.security/reports/chrome/eppiocemhmnlbhjplcgkofciiegomcon/5.11.6"
     }
 ]

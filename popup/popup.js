@@ -41,17 +41,20 @@ scanBtn.addEventListener('click', () => {
       const riskClass = level === 'blocklist' ? 'blocklist' : level;
       const riskIcon = level === 'safe' ? '&#10003;' : level === 'warn' ? '&#9888;' : '&#10007;';
       const blocklistBadge = level === 'blocklist' ? '<span class="badge-blocklist">BLOCKLISTED</span> ' : '';
+      const unlistedBadge = reasons.some(r => r === 'Not found in Chrome Web Store')
+        ? '<span class="badge-unlisted">NOT IN STORE</span> '
+        : '';
 
       const item = document.createElement('div');
       item.className = 'ext-item';
       item.innerHTML = `
         ${iconUrl ? `<img class="ext-icon" src="${iconUrl}" alt="">` : '<div class="ext-icon"></div>'}
         <div class="ext-info">
-          <div class="ext-name">${blocklistBadge}${escapeHtml(ext.name)} <span style="color:#666;font-weight:400">v${escapeHtml(ext.version)}</span></div>
+          <div class="ext-name">${blocklistBadge}${unlistedBadge}${escapeHtml(ext.name)} <span style="color:#666;font-weight:400">v${escapeHtml(ext.version)}</span></div>
           <div class="ext-detail">${ext.enabled ? 'Enabled' : 'Disabled'} &middot; ${escapeHtml(ext.installType)}</div>
           <div class="ext-risk risk-${riskClass}">
             ${riskIcon}
-            ${reasons.map(r => escapeHtml(r)).join('<br>')}
+            ${reasons.map(r => linkifyReason(r)).join('<br>')}
           </div>
         </div>
       `;
@@ -69,4 +72,15 @@ function escapeHtml(str) {
   const div = document.createElement('div');
   div.textContent = str || '';
   return div.innerHTML;
+}
+
+function linkifyReason(str) {
+  const urlPattern = /(https?:\/\/[^\s]+)/g;
+  const parts = str.split(urlPattern);
+  return parts.map(part => {
+    if (/^https?:\/\//.test(part)) {
+      return `<a class="reason-link" href="${escapeHtml(part)}" target="_blank" rel="noopener noreferrer">${escapeHtml(part)}</a>`;
+    }
+    return escapeHtml(part);
+  }).join('');
 }

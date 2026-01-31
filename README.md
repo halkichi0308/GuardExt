@@ -76,9 +76,7 @@ The extension fetches the remote list first and falls back to the local copy if 
 | Permission      | Purpose                                      |
 |-----------------|----------------------------------------------|
 | `management`    | Read metadata of all installed extensions     |
-| `storage`       | Persist scan results (reserved for future use)|
-| `alarms`        | Schedule periodic scans (reserved)            |
-| `notifications` | Alert on newly detected threats (reserved)    |
+
 
 ## License
 

@@ -86,4 +86,4 @@ The extension fetches the remote list first and falls back to the local copy if 
 
 ## License
 
-[MIT](?tab=MIT-1-ov-file#readme)
+[MIT](LICENSE.md)

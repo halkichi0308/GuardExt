@@ -28,6 +28,12 @@ guardext/
 
 ## Installation
 
+1. DL from the link below
+
+[Chrome Web Store](https://chromewebstore.google.com/detail/guardext/okofagphbpbgnennblfkgdlclfmkadie)
+
+or
+
 1. Clone the repository:
    ```bash
    git clone <repo-url>
@@ -80,4 +86,4 @@ The extension fetches the remote list first and falls back to the local copy if 
 
 ## License
 
-MIT
+[MIT](?tab=MIT-1-ov-file#readme)

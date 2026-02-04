@@ -86,4 +86,4 @@ The extension fetches the remote list first and falls back to the local copy if 
 
 ## License
 
-[MIT](LICENSE.md)
+[MIT](LICENSE)

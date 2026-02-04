@@ -118,5 +118,15 @@
         "id": "eppiocemhmnlbhjplcgkofciiegomcon",
         "name": "Urban VPN Proxy",
         "reason": "https://dex.koi.security/reports/chrome/eppiocemhmnlbhjplcgkofciiegomcon/5.11.6"
+    },
+    {
+        "id": "ibiejjpajlfljcgjndbonclhcbdcamai",
+        "name": "Speedtest Pro-Free Online Internet Speed Test",
+        "reason": "https://www.koi.ai/blog/4-million-browsers-infected-inside-shadypanda-7-year-malware-campaign"
+    },
+    {
+        "id": "eagiakjmjnblliacokhcalebgnhellfi",
+        "name": "Clean Master: the best Chrome Cache Cleaner",
+        "reason": "https://www.koi.ai/blog/4-million-browsers-infected-inside-shadypanda-7-year-malware-campaign"
     }
 ]

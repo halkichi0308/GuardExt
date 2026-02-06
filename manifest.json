@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "GuardExt",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Detect and alert on malicious browser extensions",
     "permissions": ["management"],
     "host_permissions": [

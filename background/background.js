@@ -30,6 +30,8 @@ const SUSPICIOUS_HOST_PATTERNS = [
 ];
 
 const CWS_UPDATE_URL = "https://clients2.google.com/service/update2/crx";
+const EDGE_ADDON_URL =
+    "https://edge.microsoft.com/extensionwebstorebase/v1/crx";
 
 /**
  * Check whether an extension ID exists in the Chrome Web Store
@@ -53,6 +55,27 @@ async function checkWebStorePresence(extId) {
 }
 
 /**
+ * Check whether an extension ID exists in the Microsoft Edge Add-ons store
+ * by querying Edge's CRX update endpoint.
+ * Returns true if present, false if not found.
+ */
+async function checkEdgeAddonPresence(extId) {
+    try {
+        const params = new URLSearchParams({
+            response: "updatecheck",
+            // Some extensions will throw an error if the prodversion variable exists.
+            x: `id=${extId}&installsource=ondemand&uc`,
+        });
+        const resp = await fetch(`${EDGE_ADDON_URL}?${params}`);
+        const text = await resp.text();
+        return !text.includes("error-unknownApplication");
+    } catch (e) {
+        // Network failure — assume present to avoid false positives
+        return true;
+    }
+}
+
+/**
  * Batch-check Web Store presence for a list of extension IDs.
  * Returns a Set of IDs that are NOT in the store.
  */
@@ -67,6 +90,9 @@ async function findUnlistedExtensions(extensions) {
             return;
         }
         const inStore = await checkWebStorePresence(ext.id);
+        if (!inStore) {
+            inStore = await checkEdgeAddonPresence(ext.id);
+        }
         if (!inStore) {
             unlisted.add(ext.id);
         }

@@ -133,5 +133,190 @@
         "id": "cpcdkmjddocikjdkbbeiaafnpdbdafmi",
         "name": "NexShield – Advanced Web Guardian",
         "reason": "https://thehackernews.com/2026/01/crashfix-chrome-extension-delivers.html"
+    },
+    {
+        "id": "ceibjdigmfbbgcpkkdpmjokkokklodmc",
+        "name": "VK スタイル - vk.com のテーマ",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "mflibpdjoodmoppignjhciadahapkoch",
+        "name": "VK ミュージック - オーディオセーバー",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "lgakkahjfibfgmacigibnhcgepajgfdb",
+        "name": "音楽ダウンローダー - VKsaver",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "bndkfmmbidllaiccmpnbdonijmicaafn",
+        "name": "vksaver - 音楽セーバー vk",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "pcdgkgbadeggbnodegejccjffnoakcoh",
+        "name": "VKfeed - VKから音楽とビデオをダウンロード",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "nlhpidbjmmffhoogcennoiopekbiglbp",
+        "name": "AI Assistant",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "gcfianbpjcfkafpiadmheejkokcmdkjl",
+        "name": "Llama",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "fppbiomdkfbhgjjdmojlogeceejinadg",
+        "name": "Gemini AI Sidebar",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "djhjckkfgancelbmgcamjimgphaphjdl",
+        "name": "AI Sidebar",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "llojfncgbabajmdglnkbhmiebiinohek",
+        "name": "ChatGPT Sidebar",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "gghdfkafnhfpaooiolhncejnlgglhkhe",
+        "name": "AI Sidebar",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "cgmmcoandmabammnhfnjcakdeejbfimn",
+        "name": "Grok",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "phiphcloddhmndjbdedgfbglhpkjcffh",
+        "name": "Asking Chat Gpt",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "pgfibniplgcnccdnkhblpmmlfodijppg",
+        "name": "ChatGBT",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "nkgbfengofophpmonladgaldioelckbe",
+        "name": "Chat Bot GPT",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "gcdfailafdfjbailcdcbjmeginhncjkb",
+        "name": "Grok Chatbot",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "ebmmjmakencgmgoijdfnbailknaaiffh",
+        "name": "Chat With Gemini",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "baonbjckakcpgliaafcodddkoednpjgf",
+        "name": "XAI",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "fdlagfnfaheppaigholhoojabfaapnhb",
+        "name": "Google Gemini",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "gnaekhndaddbimfllbgmecjijbbfpabc",
+        "name": "Ask Gemini",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "hgnjolbjpjmhepcbjgeeallnamkjnfgi",
+        "name": "AI Letter Generator",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "lodlcpnbppgipaimgbjgniokjcnpiiad",
+        "name": "AI Message Generator",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "cmpmhhjahlioglkleiofbjodhhiejhei",
+        "name": "AI Translator",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "bilfflcophfehljhpnklmcelkoiffapb",
+        "name": "AI For Translation",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "cicjlpmjmimeoempffghfglndokjihhn",
+        "name": "AI Cover Letter Generator",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "ckneindgfbjnbbiggcmnjeofelhflhaj",
+        "name": "AI Image Generator Chat GPT",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "dbclhjpifdfkofnmjfpheiondafpkoed",
+        "name": "Ai Wallpaper Generator",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "ecikmpoikkcelnakpgaeplcjoickgacj",
+        "name": "Ai Picture Generator",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "kepibgehhljlecgaeihhnmibnmikbnga",
+        "name": "DeepSeek Download",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "ckicoadchmmndbakbokhapncehanaeni",
+        "name": "AI Email Writer",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "fnjinbdmidgjkpmlihcginjipjaoapol",
+        "name": "Email Generator AI",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "gohgeedemmaohocbaccllpkabadoogpl",
+        "name": "DeepSeek Chat",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "flnecpdpbhdblkpnegekobahlijbmfok",
+        "name": "ChatGPT Picture Generator",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "acaeafediijmccnjlokgcdiojiljfpbe",
+        "name": "ChatGPT Translate",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "kblengdlefjpjkekanpoidgoghdngdgl",
+        "name": "AI GPT",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "idhknpoceajhnjokpnbicildeoligdgh",
+        "name": "ChatGPT Translation",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "fpmkabpaklbhbhegegapfkenkmpipick",
+        "name": "Chat GPT for Gmail",
+        "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
     }
 ]

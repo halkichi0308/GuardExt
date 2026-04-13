@@ -318,5 +318,15 @@
         "id": "fpmkabpaklbhbhegegapfkenkmpipick",
         "name": "Chat GPT for Gmail",
         "reason": "https://thehackernews.com/2026/02/malicious-chrome-extensions-caught.html"
+    },
+    {
+        "id": "lgjmjfjpldlhbaeinfjbgokoakpjglbn",
+        "name": "Amazing Auto Refresh",
+        "reason": "https://scotthelme.co.uk/amazing-refresh-a-malicious-chrome-extension-running-malware-in-the-browser/"
+    },
+    {
+        "id": "condlopdddofpgcdjfnoepbdkcgckmgb",
+        "name": "Translator",
+        "reason": "https://chrome-stats.com/d/condlopdddofpgcdjfnoepbdkcgckmgb"
     }
 ]
